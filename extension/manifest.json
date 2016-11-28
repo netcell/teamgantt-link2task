@@ -1,0 +1,19 @@
+
+{
+  "name": "TeamGantt Enhance",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "TeamGantt Enhance",
+  "content_scripts": [{
+    "js": [
+      "jquery.js",
+      "inject.js"
+    ],
+    "matches": ["https://www.teamgantt.com/gantt/schedule/*"]
+  }],
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}

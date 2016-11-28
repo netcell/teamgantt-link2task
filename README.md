@@ -1,5 +1,17 @@
 # teamgantt-link2task
 
+> **Update:** Chrome extension that allows you: get link to a task, and open the task quick edit screen when you go to that link!
+
+## Chrome Extension
+
+1. Get `TeamGantt-Link2Task.crx` at the [latest release](https://github.com/netcell/teamgantt-link2task/releases/latest);
+2. Navigate to [chrome://extensions/](chrome://extensions/).
+3. Ensure the checkbox labeled `Developer mode` is enabled.
+4. Drag and drop `TeamGantt-Link2Task.crx` file into the Extensions window.
+5. Select `Add Extension`.
+
+## Bookmarklet
+
 > Bookmarklet to insert a link to highlight the task on TeamGantt
 
 This bookmarklet will insert a link in each task line on TeamGantt. It links to the current page, but scroll to and highlight the task line. Just right click and copy the link to share.
