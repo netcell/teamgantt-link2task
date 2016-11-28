@@ -28,9 +28,24 @@
 
 <p>This bookmarklet will insert a link in each task line on TeamGantt. It links to the current page, but scroll to and highlight the task line. Just right click and copy the link to share.</p>
 
+<h3>
+<a id="result" class="anchor" href="#result" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Result:</h3>
+
 <p><img src="http://i.imgur.com/AR6Z2Cc.png" alt="image"></p>
 
-<p>The bookmarket code:</p>
+<h3>
+<a id="how-to-get-it" class="anchor" href="#how-to-get-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to get it</h3>
+
+<ol>
+<li>Go to <a href="https://netcell.github.io/teamgantt-link2task/">https://netcell.github.io/teamgantt-link2task/</a>
+</li>
+<li>Drag the bookmarklet link on that page to your bookmark bar.</li>
+<li>Go to your TeamGantt page and click on that bookmark.</li>
+<li>Enjoy!</li>
+</ol>
+
+<h3>
+<a id="the-bookmarket-code" class="anchor" href="#the-bookmarket-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The bookmarket code:</h3>
 
 <div class="highlight highlight-source-js"><pre>javascript<span class="pl-k">:</span><span class="pl-k">!</span><span class="pl-k">function</span>(){<span class="pl-k">function</span> <span class="pl-en">a</span>(){<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.task[task_id]<span class="pl-pds">"</span></span>).<span class="pl-en">not</span>(<span class="pl-s"><span class="pl-pds">"</span>.super_quick_add<span class="pl-pds">"</span></span>).<span class="pl-en">each</span>(<span class="pl-k">function</span>(){<span class="pl-k">var</span> a<span class="pl-k">=</span><span class="pl-en">$</span>(<span class="pl-v">this</span>),b<span class="pl-k">=</span><span class="pl-smi">a</span>.<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">"</span>task_id<span class="pl-pds">"</span></span>),c<span class="pl-k">=</span><span class="pl-smi">a</span>.<span class="pl-en">children</span>(<span class="pl-s"><span class="pl-pds">"</span>.get_url<span class="pl-pds">"</span></span>);<span class="pl-smi">c</span>.<span class="pl-c1">remove</span>(),<span class="pl-smi">a</span>.<span class="pl-c1">prepend</span>(\<span class="pl-s"><span class="pl-pds">'</span>&lt;a class="get_url" href="<span class="pl-cce">\'</span>+window.location.href+<span class="pl-cce">\'</span>&amp;onload=highlight-task,<span class="pl-cce">\'</span>+b+<span class="pl-cce">\'</span>&amp;" style="position:absolute; left: 0;"&gt;Link&lt;/a&gt;<span class="pl-cce">\'</span><span class="pl-ii">)})}($=window.jQuery)?a():(script=document.createElement("script"),script.src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js",script.onload=a,document.body.appendChild(script))}()</span></span></pre></div>
 
