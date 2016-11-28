@@ -10,7 +10,12 @@ This bookmarklet will insert a link in each task line on TeamGantt. It links to 
 
 ### How to get it
 
-The bookmarket code:
+1. Go to [https://netcell.github.io/teamgantt-link2task/](https://netcell.github.io/teamgantt-link2task/)
+2. Drag the bookmarklet link on that page to your bookmark bar.
+3. Go to your TeamGantt page and click on that bookmark.
+4. Enjoy!
+
+### The bookmarket code:
 
 ```js
 javascript:!function(){function a(){$(".task[task_id]").not(".super_quick_add").each(function(){var a=$(this),b=a.attr("task_id"),c=a.children(".get_url");c.remove(),a.prepend(\'<a class="get_url" href="\'+window.location.href+\'&onload=highlight-task,\'+b+\'&" style="position:absolute; left: 0;">Link</a>\')})}($=window.jQuery)?a():(script=document.createElement("script"),script.src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js",script.onload=a,document.body.appendChild(script))}()
