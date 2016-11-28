@@ -4,7 +4,11 @@
 
 This bookmarklet will insert a link in each task line on TeamGantt. It links to the current page, but scroll to and highlight the task line. Just right click and copy the link to share.
 
+### Result:
+
 ![image](http://i.imgur.com/AR6Z2Cc.png)
+
+### How to get it
 
 The bookmarket code:
 
